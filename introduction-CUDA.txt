@@ -1,0 +1,14 @@
+CUDA stands for Compute Unified Device Architecture. 
+
+CUDA is an extension of C/C++ programming. 
+
+CUDA works as an API model for parallel computing created by Nvidia, for programming and managing GPUs.
+
+We can also say, CUDA provides a platform and programming model for CUA enabled GPUs.The platform
+exposes GPUs for general purpose computing. 
+
+In CUDA, both CPUs and GPUs are being used for computing where CPU system as host and GPU as device. 
+
+CPUs and GPUs are separated platforms with their own respective memory space where we run serial workload on CPU 
+and offload parallel computations to GPUs. 
+
