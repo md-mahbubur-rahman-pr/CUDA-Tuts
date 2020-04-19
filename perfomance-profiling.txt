@@ -1,0 +1,7 @@
+To check program performance, "time" does not give much information.
+
+"nvprof" is a command line tool from Nvidia which gives a more information 
+of CUDA program performance. 
+
+For performance profiling, run the following 
+$> nvprof ./executable_name
