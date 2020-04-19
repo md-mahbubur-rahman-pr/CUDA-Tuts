@@ -1,0 +1,14 @@
+CUDA uses a kernel execution configuration <<< .,. >>>
+
+<<< .,. >>> this execution configuration tells the runtime of CUDA how many threads 
+to lanuch on GPU. 
+
+CUDA organizes threads into a group; that thread gropu being called as "thread block"
+Kernel can launch multiple thread blocks which organized into a "grid" architecture/structure. 
+
+Here in following, The syntax of kernel excution configuration --
+<<< M, T >>> 
+indicates that a kernel launches with a grid of M thread block. 
+And each thread block has T parallel threads. 
+
+
