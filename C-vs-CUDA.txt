@@ -1,0 +1,35 @@
+in C 
+=====
+
+void c_say_hi() {
+  printf("Hi, C!\n");
+}
+
+int main() {
+  c_say_hi();
+  return 0;
+}
+
+in CUDA
+=====
+
+__global__ void cuda_say_hi() {
+  printf("Hi, CUDA!\n");
+}
+
+int main() {
+  cuda_say_hi<<<1,1>>>();
+  return 0;
+}
+
+The major difference between C and CUDA implemntation is __global__specified and 
+kernel launch <<< .,. >>> syntax. 
+
+What is __global__ specifier? The __global__ specifier indicates a function that runs 
+on GPU (the device). 
+
+While a kernel being called, its execution configuration is provided through <<< .,. >>> syntax. 
+In CUDA, it's called "kernel_launch".
+
+
+
