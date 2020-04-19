@@ -1,0 +1,18 @@
+To compile CUDA source code (typically source file named with .cu extension), CUDA's nvcc compiler
+being used which is provided by Nvidia. 
+
+For example, 
+
+hi.cu
+=====
+__global__ void cuda_say_hi() {
+  printf("Hi, CUDA!\n");
+}
+
+int main() {
+  cuda_say_hi<<<1,1>>>();
+  return 0;
+}
+
+here to run this hi.cu source file, the following command 
+$> nvcc hi.cu -o hi
