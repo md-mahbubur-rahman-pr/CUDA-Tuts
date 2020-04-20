@@ -1,0 +1,8 @@
+CPU
+-- optimized for low-latency access to cached data sets. 
+-- control logic for out-of-order execution
+
+GPU
+-- optimized for data-parallel, throughput computation 
+-- architecture tolerant of memory latency
+-- For computation more transistors are dedicated
